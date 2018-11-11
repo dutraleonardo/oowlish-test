@@ -1,4 +1,3 @@
-# from rest_framework.generics import ListAPIView
 from rest_framework.viewsets import GenericViewSet
 from rest_framework.response import Response
 from rest_framework.decorators import action
@@ -9,11 +8,9 @@ from .filters import QueryBaseFilterBackend
 
 
 class GithubUsersApiViewSet(ReadOnlyQueryApiGithubMixin, GenericViewSet):
-    lookup_value_regex = '[\w\-]+' 
-    lookup_field = 'username'
     filter_backends = (QueryBaseFilterBackend, )
 
-    def list(self, request, username=None):
+    def list(self, request):
         query = self.get_queryset()
         return Response(query)
         
