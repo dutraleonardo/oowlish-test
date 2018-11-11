@@ -50,4 +50,4 @@ REST API docs can be found in <http://0.0.0.0:8000/api/v1/docs/>
 
 ## Authors
 
-* **José Leonardo De Dutra** 
+* **Leonardo Dutra** 
