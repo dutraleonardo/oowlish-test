@@ -1,0 +1,15 @@
+{
+
+    "name": "oowlish",
+
+    "description": "Self-hosted app",
+
+    "repository": "https://github.com/dutraleonardo/oowlish-test.git",
+
+    "scripts": {
+
+    "postdeploy": "python manage.py makemigrations && python manage.py migrate"
+
+  }
+
+}
